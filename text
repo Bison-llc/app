@@ -1,0 +1,136 @@
+metavlhtes 
+//kapou na uparxoun ola ta uploaded proionta olwn
+num-of-users = 0
+finalusers = scan apo plhktrologio 
+int days = 0
+
+struct user
+string user.name			// oi xrhstes se diasyndedemenh lista 
+user.wallet
+//user.wallet.constant = 0
+//user.wallet.temporary = 0
+user.xp = 83
+user.level = 1
+user.type
+
+
+struct user.UploadedProducts         		//listes pantou
+Uploadedproducts.category
+Uploadedproducts.name
+Uploadedproducts.price
+Uploadedproducts.active
+Uploadedproducts.inactive
+
+
+struct user.BorrowedProducts
+BorrowedProducts.category
+BorrowedProducts.name
+BorrowedProducts.price
+BorrowedProducts.days
+//BorrowedProducts.totalofborrowed
+
+
+struct user.LendProducts
+LendProducts.category
+LendProducts.name
+LendProducts.price
+LendProducts.days
+
+
+
+MAIN:
+input next day    			/arxiki while tha dexetai apo plhktrologio enter 
+
+
+print "dwse posous xrhstes theleis na exeis"		/auto eksw apo thn arxiki while
+scan final users
+
+
+while num-of-users <= finalusers{		/auto na stamataei na emfanizetai otan sumplhrwthoun
+print "thes neo xrhsth?"
+if yes{
+	printf"dwse neo xrhsth"
+	scan user.name
+	//periptwsh gia confirmed apo thn arxh-bonus points
+}
+} 
+---------------------------------------------------------------------------------------------------
+//xrhsths anevazei product
+
+//auto to while tha prepei na ginetai mono gia oso theloume emeis na anevazoun proionta oi xrhstes. gia na mhn mas rwtaei meta oli tin wra - vale metriti
+while yes {
+print "thelei na anevasei kapoios kati?"
+if yes{
+print "poios xrhsths?" 
+user-to-upload = scanf (epilogh xrhsth) // tha antistoixei se 5 px onomata 
+
+scanf  gia user to upload
+Uploadedproducts.category
+Uploadedproducts.name
+Uploadedproducts.price
+Uploadedproducts.active
+Uploadedproducts.inactive
+user-to-upload.wallet = user-to-upload.wallet + user-to-upload.UploadedProducts.price*2
+} 
+}
+
+//ektelesh prosforas
+
+----------------------------------------------------------------------------------------------------------------
+//User borrows
+
+print "poios daneizei"
+daneistis = scanf "user.name"
+print "poios daneizetai"
+daneizomenos = scanf"user.name"
+
+//diavase apo plhktrologio- dwse kai mhnuma ("thelei na daneistei kapoios kati? ti? poso ktl)
+daneizomenos.BorrowedProducts.category = ...
+daneizomenos.BorrowedProducts.name = scan
+daneizomenos.BorrowedProducts.price = scan
+daneizomenos.BorrowedProducts.days = scan
+
+
+daneizomenos.wallet = daneizomenos.wallet - daneizomenos.borrowedProducts.price
+daneizomenos.xp = daneizomenos.xp + 0,7*daneizomenos.borrowedProducts.price*daneizomenos.BorrowedProducts.days
+
+-------------------------------------------------------------------------------------------------------------
+
+//User lends
+print "poios daneizei"
+daneistis = scanf "user.name"
+print "poios daneizetai"
+daneizomenos = scanf"user.name"
+
+//diavase apo plhktrologio-mhnuma
+daneistis.LendProducts.category = ...
+daneistis.LendProducts.name = scan
+daneistis.LendProducts.price = scan
+daneistis.LendProducts.days = scan
+
+daneistis.wallet = dazeistis.wallet + daneistis.LendProducts.price
+daneistis.xp = daneistis.xp + daneistis.LendProduct.price*daneistis.LendProduct.days
+
+-------------------------------------------------------------------------------------------------------------
+
+
+//vale metavlhtes-flags-metrites gia na ginei i douleia sou
+psakse lista me xrhstes-olous
+gia kathe komvo-xrhsth des ola ta proionta pou einai anevasmena(uploadedproducts)
+pare ta prices
++0.5*price sto wallet tou kathenos (kathe mera)
+
+
+
+
+
+
+
+
+
+
+num-of-users = num-of-users + 1
+	
+
+
+
