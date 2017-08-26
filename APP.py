@@ -1,10 +1,12 @@
-
-
-
-
 num-of-user = 0 
 finalusers = int(raw_input("dwse teliko arithmo: "))
 int(days) = 0
+wallet = []
+xp = []
+Users = {}
+level = {}
+types = []
+
 
 
 Users = {}
