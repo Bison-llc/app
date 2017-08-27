@@ -110,15 +110,15 @@ print(raw_input("Anyone wants to borrow a product? : "))
 # print  "Hello %s!" % name
 
 
-product = 0
+int(p = 0)
 
-while (product <= 35):
-    print "thelei na anevasei kapoios kati?"
-    product = raw_input()
-    print "%s" % product
-    product = product + 1
+if (p <= 35):      
+      print "thelei na anevasei kapoios kati?"
+      p = raw_input()
+      print "%s" % p
+      p = p + 1
 else:
-    print("nothing")
+      print("nothing")
     
     
     
