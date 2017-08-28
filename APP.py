@@ -1,6 +1,7 @@
 import sys
 import struct
-
+import math
+import numpy as np
 
 
 
@@ -57,11 +58,17 @@ else:
       print("Max users")
 
 # main
-
-nextday = int(raw_input("Enter for next day: "))
-while True:
-    u = raw_input("Anyone wants to upload item? : ")
-
+def main():
+      
+      while x < 365:
+            nextday = int(raw_input("Enter for next day: "))
+            print (nextday)
+            x = x + 1
+      else:
+            break
+      if (y=1) :
+            u = raw_input("Anyone wants to upload item? : ")
+            print(u)
 
 #if num-of-users <= finalusers:
 #print(int(raw_input("you want new user?: ")
@@ -81,18 +88,9 @@ if y==0 :
             print("stoped")
                 
 else:
-      print(nothing)          
-                
-                
-                
-          
-    
-    
-    
-    
-    
-    
-    
+      print(nothing)               
+                 
+     
 # user borrows
     
 
@@ -114,20 +112,11 @@ int(p = 0)
 
 if (p <= 35):      
       print "thelei na anevasei kapoios kati?"
-      p = raw_input()
-      print "%s" % p
-      p = p + 1
+      product = raw_input("Name of product: ")
+      print "%s" % product
+      product = product + 1
 else:
       print("nothing")
-    
-    
-    
-    
-    
-    
-    
-#def main():
-    
     
     
     
