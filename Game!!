@@ -26,8 +26,10 @@ class Player(Character):
     def __init__(self):
         Character.__init__(self)
         self.state = 'normal'
-        self.health = 10
-        self.health_max = 10
+        self.level = 1
+        self.level_max = 100
+        self.wallet = 0
+        selft.confirmation = (regular/confirmed/premium)
     def quit(self):
         print "%s can't find the way back home, and dies of starvation.\nR.I.P." % self.name
         self.health = 0
