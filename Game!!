@@ -3,8 +3,10 @@ from random import randint
 class Character:
     def __init__(self):
         self.name = ""
-        self.health = 1
-        self.health_max = 1
+        self.level = 1
+        self.level_max = 100
+        self.wallet = 0
+        self.confirmation = (regular/confirmed/premium)
     def do_damage(self, enemy):
         damage = min(
         max(randint(0, self.health) - randint(0, enemy.health), 0),
